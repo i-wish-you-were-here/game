@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/18432/Desktop/medoing/game/include/raylib.h
+stdarg.h
+-
+stdbool.h
+-
+
+C:/Users/18432/Desktop/medoing/game/stay.c
+include/raylib.h
+C:/Users/18432/Desktop/medoing/game/include/raylib.h
+stdlib.h
+-
+
