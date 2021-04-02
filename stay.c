@@ -24,7 +24,10 @@ static void UpdateScreen();
 int main(void){
     InitWindow(screenWidth, screenHeight, "i wish you were here");
     SetTargetFPS(60);
+
 //screen initiation here
+InitTitleScreen();
+
     while (!WindowShouldClose()){
         UpdateScreen();
     }
@@ -43,11 +46,11 @@ static void DrawTransition(){
 }
 void ChangeScreen(int screen){
     switch (currentScreen){
-        //TODO add screen unloading here
+        case TITLE: UnloadTitleScreen(); break;
         default: break;
     }
     switch(screen){
-        //TODO add screen initiation here
+        case TITLE: InitTitleScreen(); break;
         default: break;
     }
     currentScreen=screen;
@@ -59,6 +62,7 @@ void upTransition(void){
             transitionAlpha = 1.0;
             switch (transitionFromScreen) {
                 //TODO add screen unloading here
+                case TITLE: UnloadTitleScreen(); break;
                 default: break;
             }
             switch (transitionToScreen){

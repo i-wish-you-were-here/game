@@ -12,8 +12,8 @@ project(raylib-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(raylib-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/raysan5/raylib/archive/master.tar.gz"
-                    SOURCE_DIR          "C:/Users/18432/Desktop/medoing/game/cmake-build-debug/_deps/raylib-src"
-                    BINARY_DIR          "C:/Users/18432/Desktop/medoing/game/cmake-build-debug/_deps/raylib-build"
+                    SOURCE_DIR          "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/_deps/raylib-src"
+                    BINARY_DIR          "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/_deps/raylib-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

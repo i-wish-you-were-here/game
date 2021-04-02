@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/i_wish_you_were_here.dir/stay.c.obj"
-  "i_wish_you_were_here.exe"
-  "i_wish_you_were_here.exe.manifest"
+  "CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o"
+  "CMakeFiles/i_wish_you_were_here.dir/stay.c.o"
+  "i_wish_you_were_here"
   "i_wish_you_were_here.pdb"
-  "libi_wish_you_were_here.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
