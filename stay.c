@@ -84,6 +84,19 @@ void upTransition(void){
     }
 }
 static void UpdateScreen(void){
-    //TODO write UpdateScreen function and define screen transitions
+    if (!onTransition){
+        switch (currentScreen)
+        {
+            case TITLE:
+                {
+                UpdateTitleScreen();
+
+            if (FinishTitleScreen()) TransitionScreen();
+            }break;
+        }
+            default: break;
+        else UpdateTransition();
+    }
 }
+
     //TODO add screen drawing statements here

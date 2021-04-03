@@ -100,6 +100,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/smeek/Desktop/i-wish-you-were-here/physics.c">
+			<Option target="i_wish_you_were_here"/>
+		</Unit>
 		<Unit filename="/Users/smeek/Desktop/i-wish-you-were-here/screens/title_screen.c">
 			<Option target="i_wish_you_were_here"/>
 		</Unit>

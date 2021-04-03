@@ -165,6 +165,33 @@ i_wish_you_were_here/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/build
 .PHONY : i_wish_you_were_here/fast
 
+physics.o: physics.c.o
+
+.PHONY : physics.o
+
+# target to build an object file
+physics.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/physics.c.o
+.PHONY : physics.c.o
+
+physics.i: physics.c.i
+
+.PHONY : physics.i
+
+# target to preprocess a source file
+physics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/physics.c.i
+.PHONY : physics.c.i
+
+physics.s: physics.c.s
+
+.PHONY : physics.s
+
+# target to generate assembly for a file
+physics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/physics.c.s
+.PHONY : physics.c.s
+
 screens/title_screen.o: screens/title_screen.c.o
 
 .PHONY : screens/title_screen.o
@@ -230,6 +257,9 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... i_wish_you_were_here"
+	@echo "... physics.o"
+	@echo "... physics.i"
+	@echo "... physics.s"
 	@echo "... screens/title_screen.o"
 	@echo "... screens/title_screen.i"
 	@echo "... screens/title_screen.s"

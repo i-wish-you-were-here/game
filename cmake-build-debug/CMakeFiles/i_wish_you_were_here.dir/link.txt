@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/i_wish_you_were_here.dir/stay.c.o CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o  -o i_wish_you_were_here  /usr/local/lib/libraylib.dylib 
+/usr/bin/cc  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/i_wish_you_were_here.dir/stay.c.o CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o CMakeFiles/i_wish_you_were_here.dir/physics.c.o  -o i_wish_you_were_here  /usr/local/lib/libraylib.dylib 

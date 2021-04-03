@@ -27,6 +27,6 @@ if (NOT raylib_FOUND)
 endif()
 
 #update this EVERYTIME a C class is created
-add_executable(${PROJECT_NAME} stay.c screens/title_screen.c)
+add_executable(${PROJECT_NAME} stay.c screens/title_screen.c physics.c)
 
 target_link_libraries(${PROJECT_NAME} raylib)
