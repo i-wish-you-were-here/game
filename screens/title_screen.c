@@ -29,6 +29,6 @@ void UnloadTitleScreen(void){
 
 }
 
-void FinishTitleScreen(void){
+int FinishTitleScreen(void){
     return FinishScreen;
 }

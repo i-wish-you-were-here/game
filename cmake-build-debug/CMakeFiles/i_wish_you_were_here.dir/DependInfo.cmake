@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/smeek/Desktop/i-wish-you-were-here/physics.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/physics.c.o"
+  "/Users/smeek/Desktop/i-wish-you-were-here/screens/dev_screen.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.o"
   "/Users/smeek/Desktop/i-wish-you-were-here/screens/title_screen.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o"
   "/Users/smeek/Desktop/i-wish-you-were-here/stay.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/stay.c.o"
   )

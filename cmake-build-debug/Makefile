@@ -192,6 +192,33 @@ physics.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/physics.c.s
 .PHONY : physics.c.s
 
+screens/dev_screen.o: screens/dev_screen.c.o
+
+.PHONY : screens/dev_screen.o
+
+# target to build an object file
+screens/dev_screen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.o
+.PHONY : screens/dev_screen.c.o
+
+screens/dev_screen.i: screens/dev_screen.c.i
+
+.PHONY : screens/dev_screen.i
+
+# target to preprocess a source file
+screens/dev_screen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.i
+.PHONY : screens/dev_screen.c.i
+
+screens/dev_screen.s: screens/dev_screen.c.s
+
+.PHONY : screens/dev_screen.s
+
+# target to generate assembly for a file
+screens/dev_screen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i_wish_you_were_here.dir/build.make CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.s
+.PHONY : screens/dev_screen.c.s
+
 screens/title_screen.o: screens/title_screen.c.o
 
 .PHONY : screens/title_screen.o
@@ -260,6 +287,9 @@ help:
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"
+	@echo "... screens/dev_screen.o"
+	@echo "... screens/dev_screen.i"
+	@echo "... screens/dev_screen.s"
 	@echo "... screens/title_screen.o"
 	@echo "... screens/title_screen.i"
 	@echo "... screens/title_screen.s"

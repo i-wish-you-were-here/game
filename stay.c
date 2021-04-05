@@ -26,6 +26,7 @@ int main(void){
     SetTargetFPS(60);
 
 //screen initiation here
+InitDevScreen();
 InitTitleScreen();
 
     while (!WindowShouldClose()){
@@ -46,10 +47,12 @@ static void DrawTransition(){
 }
 void ChangeScreen(int screen){
     switch (currentScreen){
+        case DEV: UnloadDevScreen(); break;
         case TITLE: UnloadTitleScreen(); break;
         default: break;
     }
     switch(screen){
+        case DEV: InitDevScreen(); break;
         case TITLE: InitTitleScreen(); break;
         default: break;
     }
@@ -62,6 +65,7 @@ void upTransition(void){
             transitionAlpha = 1.0;
             switch (transitionFromScreen) {
                 //TODO add screen unloading here
+                case DEV: UnloadDevScreen(); break;
                 case TITLE: UnloadTitleScreen(); break;
                 default: break;
             }
@@ -85,17 +89,18 @@ void upTransition(void){
 }
 static void UpdateScreen(void){
     if (!onTransition){
-        switch (currentScreen)
-        {
-            case TITLE:
-                {
-                UpdateTitleScreen();
+        switch (currentScreen){
+            case DEV:{
+                UpdateDevScreen();
+                if (FinishDevScreen()) TransitionScreen(TITLE);
 
-            if (FinishTitleScreen()) TransitionScreen();
-            }break;
+            } break;
+            case TITLE:{
+                UpdateTitleScreen();
+                if (FinishTitleScreen()) TransitionScreen();
+            } break;
         }
-            default: break;
-        else UpdateTransition();
+
     }
 }
 
