@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\i_wish_you_were_here.dir/objects.a
-C:\Users\18432\meow\bin\ar.exe cr CMakeFiles\i_wish_you_were_here.dir/objects.a @CMakeFiles\i_wish_you_were_here.dir\objects1.rsp
-C:\Users\18432\meow\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\i_wish_you_were_here.dir/objects.a -Wl,--no-whole-archive  -o i_wish_you_were_here.exe -Wl,--out-implib,libi_wish_you_were_here.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\i_wish_you_were_here.dir\linklibs.rsp
+/usr/bin/cc  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/i_wish_you_were_here.dir/stay.c.o CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o CMakeFiles/i_wish_you_were_here.dir/physics.c.o CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.o  -o i_wish_you_were_here  /usr/local/lib/libraylib.dylib 

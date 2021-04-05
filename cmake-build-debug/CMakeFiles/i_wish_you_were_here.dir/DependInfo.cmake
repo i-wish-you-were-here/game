@@ -4,26 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/18432/Desktop/medoing/game/stay.c" "C:/Users/18432/Desktop/medoing/game/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/stay.c.obj"
+  "/Users/smeek/Desktop/i-wish-you-were-here/physics.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/physics.c.o"
+  "/Users/smeek/Desktop/i-wish-you-were-here/screens/dev_screen.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/screens/dev_screen.c.o"
+  "/Users/smeek/Desktop/i-wish-you-were-here/screens/title_screen.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/screens/title_screen.c.o"
+  "/Users/smeek/Desktop/i-wish-you-were-here/stay.c" "/Users/smeek/Desktop/i-wish-you-were-here/cmake-build-debug/CMakeFiles/i_wish_you_were_here.dir/stay.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "GRAPHICS_API_OPENGL_33"
-  "PLATFORM_DESKTOP"
-  )
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "_deps/raylib-src/src"
-  "_deps/raylib-src/src/external/glfw/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/18432/Desktop/medoing/game/cmake-build-debug/_deps/raylib-build/raylib/CMakeFiles/raylib.dir/DependInfo.cmake"
-  "C:/Users/18432/Desktop/medoing/game/cmake-build-debug/_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

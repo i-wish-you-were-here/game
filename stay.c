@@ -24,7 +24,11 @@ static void UpdateScreen();
 int main(void){
     InitWindow(screenWidth, screenHeight, "i wish you were here");
     SetTargetFPS(60);
+
 //screen initiation here
+InitDevScreen();
+InitTitleScreen();
+
     while (!WindowShouldClose()){
         UpdateScreen();
     }
@@ -43,11 +47,13 @@ static void DrawTransition(){
 }
 void ChangeScreen(int screen){
     switch (currentScreen){
-        //TODO add screen unloading here
+        case DEV: UnloadDevScreen(); break;
+        case TITLE: UnloadTitleScreen(); break;
         default: break;
     }
     switch(screen){
-        //TODO add screen initiation here
+        case DEV: InitDevScreen(); break;
+        case TITLE: InitTitleScreen(); break;
         default: break;
     }
     currentScreen=screen;
@@ -59,6 +65,8 @@ void upTransition(void){
             transitionAlpha = 1.0;
             switch (transitionFromScreen) {
                 //TODO add screen unloading here
+                case DEV: UnloadDevScreen(); break;
+                case TITLE: UnloadTitleScreen(); break;
                 default: break;
             }
             switch (transitionToScreen){
@@ -80,6 +88,20 @@ void upTransition(void){
     }
 }
 static void UpdateScreen(void){
-    //TODO write UpdateScreen function and define screen transitions
+    if (!onTransition){
+        switch (currentScreen){
+            case DEV:{
+                UpdateDevScreen();
+                if (FinishDevScreen()) TransitionScreen(TITLE);
+
+            } break;
+            case TITLE:{
+                UpdateTitleScreen();
+                if (FinishTitleScreen()) TransitionScreen();
+            } break;
+        }
+
+    }
 }
+
     //TODO add screen drawing statements here
